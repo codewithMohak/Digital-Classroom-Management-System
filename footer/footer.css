@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: white;
+    height: 50vh; /* Half of the window height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Logo in Top-Left */
+.footer-logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.footer-logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* Navigation Links at Mid-Top */
+.footer-nav {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #f15a24;
+}
+
+/* Copyright at Bottom */
+.footer-bottom {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+}
+
