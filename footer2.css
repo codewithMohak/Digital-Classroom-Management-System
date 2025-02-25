@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Logo in Top-Left */
+.footer-logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.footer-logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* Footer Content: Navigation and Contact Sections */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.nav-section, .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for equal spacing */
+}
+
+.footer-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #f15a24;
+}
+
+/* Copyright at Bottom */
+.footer-bottom {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+}
