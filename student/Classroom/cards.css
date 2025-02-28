@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: fixed;
+    top: 30px;
+    left: 25px;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #004d40;
+}
+
+
+
+
+/* Main Content */
+.main-content {
+    margin-left: 0;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.logout-button {
+     background: #00796b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #004d40;
+}
+
+
+
+/* Search Bar */
+.search-container {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 210%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+
+/* Classroom Grid */
+.classroom-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Class Card */
+.class-card {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+}
+
+/* Card Header */
+.card-header {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.class-card .card-header {
+    height: 65px;
+    border-radius: 15px 15px 0 0;
+}
+
+.subject {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px
+}
+
+.options-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Teacher Name */
+.teacher {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Card Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teacher-icon {
+    background-color: #00796b;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.chat-icon {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Card Colors */
+.blue .card-header { background-color: #64b5f6; }
+.yellow .card-header { background-color: #ffeb3b; }
+.green .card-header { background-color: #81c784; }
+.red .card-header { background-color: #e57373; }
+
+.section-title {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #009688;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
